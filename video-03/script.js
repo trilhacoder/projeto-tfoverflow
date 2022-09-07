@@ -34,7 +34,7 @@ tagBotaoPerguntar.addEventListener("click", function() {
 function formularioEhValido(tagTitulo, tagDescricao, 
     tagHtml, tagCss, tagJavaScript) {
     
-    let formularioEhValido = false
+    let formularioEhValido = true
     if (tagTitulo.value == "") {
         formularioEhValido = false
         tagTitulo.classList.add("campoInvalido")
