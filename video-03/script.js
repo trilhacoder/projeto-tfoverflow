@@ -54,4 +54,6 @@ function formularioEhValido(tagTitulo, tagDescricao,
     } else {
         tagTags.classList.remove("campoInvalido")
     }
+
+    return formularioEhValido
 }
