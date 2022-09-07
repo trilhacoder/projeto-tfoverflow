@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TF Overflow</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Bem vindo ao TF Overflow!</h1>
+        <h2>Perguntas e respostas sobre Programação</h2>
+    </header>
+
+    <button class="botaoPerguntar" id="botaoPerguntar">Perguntar</button>
+
+    <div class="fundoFormulario ocultarFormulario" id="fundoFormulario">
+        <form class="formularioPergunta" id="formularioPergunta">
+            <h3>Faça sua pergunta</h3>
+            <p class="mensagem" id="mensagem"></p>
+
+            <label class="titulo" for="titulo">* Título: </label>
+            <input class="titulo" id="titulo" name="titulo" type="text">
+
+            <label class="descricao" for="descricao">* Descrição: </label>
+            <textarea class="descricao" id="descricao" name="descricao" cols="30" rows="10"></textarea>
+
+            <label class="apelido" for="apelido">Apelido: </label>
+            <input class="apelido" id="apelido" type="text">
+
+            <fieldset class="tags" id="tags">
+                <legend>* Tags: </legend>
+                <input id="tagHtml" name="tagHtml" type="checkbox"><label for="tagHtml">HTML</label>
+                <input id="tagCss" name="tagCss" type="checkbox"><label for="tagCss">CSS</label>
+                <input id="tagJavaScript" name="tagJavaScript" type="checkbox"><label for="tagJavaScript">JavaScript</label>
+            </fieldset>
+            <p class="camposObrigatorios">* campos obrigatórios</p>
+
+            <button class="botaoEnviarPergunta">Enviar</button>
+            
+        </form>
+    </div>
+</body>
+</html>
