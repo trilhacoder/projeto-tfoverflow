@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TF Overflow</title>
+    <link rel="stylesheet" href="respostas.css">
+    <script src="respostas.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <ul class="listaDePerguntas" id="listaDePerguntas">
+            
+        </ul>
+
+        <button class="botaoResponder" id="botaoResponder">Responder</button>
+        <h3 class="tituloListaDePerguntas">Respostas</h3>
+
+        <ul class="listaDePerguntas" id="listaDeRespostas">
+            
+        </ul>
+        
+    </div>
+    
+    <!--  -->
+    <div class="fundoFormulario ocultarFormulario" id="fundoFormulario">
+        <form class="formularioResposta" id="formularioResposta">
+            <h3>Dê sua resposta</h3>
+            <p class="mensagem" id="mensagem"></p>
+
+            <label class="descricao" for="descricao">* Descrição: </label>
+            <textarea class="descricao" id="descricao" name="descricao" cols="30" rows="10"></textarea>
+
+            <label class="apelido" for="apelido">Apelido: </label>
+            <input class="apelido" id="apelido" name="apelido" type="text">
+
+            <p class="camposObrigatorios">* campos obrigatórios</p>
+
+            <button class="botaoEnviarResposta">Enviar</button>
+            
+        </form>
+    </div>
+</body>
+</html>
