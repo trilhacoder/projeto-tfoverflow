@@ -24,9 +24,9 @@ function obtemTodasPerguntas() {
 
 function criarHtmlDaPergunta(tagListaDePerguntas, pergunta) {
     let tagLi = document.createElement("li")
-
+    
     let tagACardPergunta = document.createElement("a")
-    tagACardPergunta.classList.add("linkCardPergunta")
+    tagACardPergunta.classList.add("linkPergunta")
     tagACardPergunta.href = `file:///C:/Users/f_r_a/projeto-tfoverflow/video-08/respostas.html?idPergunta=${pergunta.id}`
 
     let tagDivCardPergunta = document.createElement("div")
@@ -71,8 +71,6 @@ function criarHtmlDaPergunta(tagListaDePerguntas, pergunta) {
     tagDivInfo.appendChild(tagSpanVisualizacoes)
     tagDivInfo.appendChild(tagSpanCriadoEm)
 
-    tagACardPergunta.appendChild(tagDivCardPergunta)
-
     tagDivCardPergunta.appendChild(tagDivConteudo)
 
     tagDivConteudo.appendChild(tagH4Titulo)
@@ -82,6 +80,8 @@ function criarHtmlDaPergunta(tagListaDePerguntas, pergunta) {
 
     tagDivPerfil.appendChild(tagImgPerfil)
     tagDivPerfil.appendChild(tagSpanApelido)
+
+    tagACardPergunta.appendChild(tagDivCardPergunta)
 
     tagLi.appendChild(tagACardPergunta)
 

@@ -14,7 +14,6 @@ function obtemPergunta(idPergunta) {
             console.log(pergunta)
             let tagListaDePerguntas = document.querySelector("#listaDePerguntas")
             tagListaDePerguntas.innerHTML = ""
-
             criarHtmlDaPergunta(tagListaDePerguntas, pergunta)
         })
         .catch(function(error) {
@@ -204,8 +203,8 @@ tagFormularioResposta.addEventListener("submit", function(event) {
             },
             body: JSON.stringify({
                 descricao: tagDescricao.value,
-                apelido: tagApelido.value,
-                criado_em: obterDataAtual()
+                criado_em: obterDataAtual(),
+                apelido: tagApelido.value
             })
         })
         .then(function(response) {
@@ -221,7 +220,6 @@ tagFormularioResposta.addEventListener("submit", function(event) {
             tagFundoFormulario.classList.add("ocultarFormulario")
             
             obtemTodasRespostas(idPergunta)
-
         })
         .catch(function(error) {
             console.log(error)
@@ -229,25 +227,6 @@ tagFormularioResposta.addEventListener("submit", function(event) {
             mensagem.textContent = "Ocorreu um erro: " + error
             mensagem.style.display = "block"
         })
-
-
-        // Caso API retorne sucesso
-        // let chamouApiComSucesso = true
-        // if (chamouApiComSucesso) {
-        //     console.log(pergunta)
-        //     mensagem.style.display = "none"
-        //     let tagFundoFormulario = document.querySelector("#fundoFormulario")
-        //     tagFundoFormulario.classList.add("ocultarFormulario")
-            
-        //     obtemTodasRespostas()
-        // } else {
-        //     // Caso API retorne erro
-        //     let error = "Ocorreu um erro na chamada da API"
-        //     console.log(error)
-        //     let mensagem = document.querySelector("#mensagem")
-        //     mensagem.textContent = "Ocorreu um erro: " + error
-        //     mensagem.style.display = "block"
-        // }
     } else {
         let mensagem = document.querySelector("#mensagem")
         mensagem.textContent = "Necessário preencher todos os campos obrigatórios"
