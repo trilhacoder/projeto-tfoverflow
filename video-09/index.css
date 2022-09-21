@@ -1,0 +1,33 @@
+
+
+.listaDePerguntas {
+    list-style: none;
+}
+
+.listaDePerguntas > li {
+    margin-top: 30px;
+}
+
+.linkPergunta {
+    text-decoration: none;
+}
+
+.tituloListaDePerguntas {
+    color: #2025A1;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+.cabecalho h1 {
+    font-size: 48px;
+    color: #2025A1;
+}
+
+.cabecalho h2 {
+    font-size: 28px;
+    color: #3A3A3A;
+}

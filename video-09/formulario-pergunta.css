@@ -1,0 +1,121 @@
+.formularioPergunta {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 2px solid #EAEAEA;
+    width: 524px;
+    padding: 32px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.formularioPergunta h3 {
+    color: #2025A1;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formularioPergunta .mensagem {
+    color: #ED6060;
+    display: none;
+}
+
+.formularioPergunta .titulo {
+    width: 100%;
+    font-weight: bold;
+}
+
+.formularioPergunta input.titulo {
+    border: 2px solid #EAEAEA;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.formularioPergunta input.titulo:hover,
+.formularioPergunta input.titulo:focus {
+    border: 2px solid #2025A1;
+    outline: none;
+}
+
+.formularioPergunta input.titulo.campoInvalido {
+    border: 2px solid #ED6060;
+}
+
+.formularioPergunta .descricao {
+    width: 100%;
+}
+
+.formularioPergunta textarea.descricao {
+    border: 2px solid #EAEAEA;
+    border-radius: 4px;
+}
+
+.formularioPergunta textarea.descricao:hover,
+.formularioPergunta textarea.descricao:focus {
+    border: 2px solid #2025A1;
+    outline: none;
+}
+
+.formularioPergunta textarea.descricao.campoInvalido {
+    border: 2px solid #ED6060;
+}
+
+.formularioPergunta .apelido {
+    width: 100%;
+}
+
+.formularioPergunta input.apelido {
+    border: 2px solid #EAEAEA;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.formularioPergunta input.apelido.campoInvalido {
+    border: 2px solid #ED6060;
+}
+
+.formularioPergunta input.apelido:hover,
+.formularioPergunta input.apelido:focus {
+    border: 2px solid #2025A1;
+    outline: none;
+}
+
+.formularioPergunta .tags {
+    border: none;
+}
+
+.formularioPergunta .tags.campoInvalido {
+    border: 2px solid #ED6060;
+}
+
+.formularioPergunta .tags legend {
+    float: left;
+}
+
+.formularioPergunta .tags input {
+    border: 2px solid #EAEAEA;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.formularioPergunta .camposObrigatorios {
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.formularioPergunta label {
+    display: inline-block;
+}
+
+.formularioPergunta label.titulo,
+.formularioPergunta label.descricao,
+.formularioPergunta label.apelido,
+.formularioPergunta .tags {
+    margin-top: 10px;
+}
+
+.formularioPergunta .tags input {
+    margin-left: 20px;
+}

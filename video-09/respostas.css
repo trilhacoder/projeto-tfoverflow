@@ -1,0 +1,61 @@
+.cardResposta {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+    height: 150px;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #EAEAEA;
+}
+
+.cardResposta .conteudo {
+    width: 60%;
+}
+
+.cardResposta .info span {
+    display: block;
+    color: #3A3A3A;
+}
+
+.cardResposta .tags {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+.cardResposta .descricao {
+    margin-bottom: 30px;
+}
+
+.cardResposta .numeroDeVisualizacoes {
+    margin-bottom: 30px;
+}
+
+.cardResposta .tags .html {
+    background-color: #DD4B25;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cardResposta .tags .javascript {
+    background-color: #EFD81D;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cardResposta .tags .css {
+    background-color: #264DE4;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
