@@ -1,0 +1,7 @@
+.perfil {
+    text-align: center;
+}
+.perfil img, .perfil span {
+    display: block;
+    color: #3A3A3A;
+}

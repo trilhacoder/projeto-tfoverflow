@@ -1,0 +1,81 @@
+.cardPergunta {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #FFFFFF;    
+    border-radius: 4px;
+    padding: 20px;
+    height: 150px;
+    border: 2px solid #EAEAEA;
+}
+
+.cardPergunta:hover {
+    border: 2px solid #2025A1;
+    cursor: pointer;
+}
+
+.cardPergunta .conteudo {
+    width: 60%;
+}
+
+.cardPergunta .info span {
+    display: block;
+    color: #3A3A3A;
+}
+
+.cardPergunta .numeroDeVisualizacoes {
+    margin-bottom: 30px;
+}
+
+.cardPergunta .tags {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    flex-wrap: wrap;
+    color: #ffffff;    
+    margin-top: 30px;
+}
+
+.cardPergunta .tags .html {
+    background-color: #DD4B25;    
+}
+
+.cardPergunta .tags .javascript {
+    background-color: #EFD81D;
+}
+
+.cardPergunta .tags .css {
+    background-color: #264DE4;
+}
+
+.cardPergunta .tags .css,
+.cardPergunta .tags .javascript,
+.cardPergunta .tags .html {
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 600px)
+{
+    .cardPergunta {
+        gap: 10px;
+    }
+
+    .cardPergunta .tags {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .cardPergunta .tags .html, 
+    .cardPergunta .tags .javascript,
+    .cardPergunta .tags .css
+    {
+        padding: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }    
+}
